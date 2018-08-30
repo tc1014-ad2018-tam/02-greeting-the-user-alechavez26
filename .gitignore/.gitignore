@@ -1,0 +1,35 @@
+/* Esta es la tarea 2 de programacion
+*
+* Alejandra Chávez
+* 27/08/2018
+* Correo: A01411970@itesm.mx
+*/
+
+#include <stdio.h>
+
+int main() {
+    //Declaracion de variables
+    int hora;
+
+    //Aqui le pido al usuario que introduzca la hora
+
+
+    printf("Hola %s, ¿que hora es?.");
+     scanf("%i", &hora);
+
+    if(hora >= 1 && hora <= 11.59) {
+        printf("Buenos Dias\n.");
+    } else {
+
+        if(hora >= 12.01 && hora <= 18) {
+            printf("Buenas tardes\n.");
+        } else {
+            if(hora >= 18.01 && hora <= 24) {
+                printf("Buenas noches\n.");
+            }
+        }
+    }
+
+    return 0;
+
+}
